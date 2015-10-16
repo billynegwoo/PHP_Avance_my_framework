@@ -1,0 +1,5 @@
+ RewriteEngine On
+ RewriteCond %{REQUEST_FILENAME} !-f [OR]
+ RewriteCond %{REQUEST_URI} !^/PHP_Avance_my_framework/(static/.+|index\.php|robots\.txt)$
+ RewriteBase /PHP_Avance_my_framework/
+ RewriteRule ^(.*)$ index.php?_url=$1 [QSA,L]
