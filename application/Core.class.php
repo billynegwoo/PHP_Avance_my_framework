@@ -58,6 +58,10 @@ class Core
 			{
 				$this->setRouting($controller,$action);
 				return;
+			}else{
+				$action = 'default';
+				$controller = 'default';
+				$this->setRouting($controller,$action);
 			}
 		}else{
 			$action = 'default';

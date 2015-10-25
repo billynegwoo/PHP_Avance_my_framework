@@ -9,7 +9,7 @@ class DefaultController extends DefaultModel
 		$this->render(['prenom' => $this->getLogin()]);
 	}
 	public function connexionAction(){
-		$this->render(['login'=> $this->getLogin(),
+		$this->render(['login'=> $this->setLogin(),
 			'url'=> $_SERVER['REQUEST_URI']]);
 	}
 }
